@@ -9,12 +9,11 @@ const morgan = require('morgan');
 const errorHandler = require( './middleware/error.js');
 const notFound = require( './middleware/404.js' );
 
-// Models
-// TODO: Pull these in (or create them)!
-const Products = require('./models/products.js');
+// Models//
+const Products = require('../models/products/products');
 const products = new Products();
 
-const Categories = require('./models/categories.js');
+const Categories = require('../models/categories/categories');
 const categories = new Categories();
 
 // Prepare the express app

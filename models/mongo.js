@@ -37,7 +37,7 @@ class Model {
    * @param record {object} matches the format of the schema
    * @returns {*}
    */
-  create(record) {
+  post(record) {
     let newRecord = new this.schema(record);
     return newRecord.save();
   }
@@ -48,7 +48,7 @@ class Model {
    * @param record {object} The record data to replace. ID is a required field
    * @returns {*}
    */
-  update(_id, record) {
+  put(_id, record) {
     return this.schema.findByIdAndUpdate(_id, record, { new: true });
   }
 
