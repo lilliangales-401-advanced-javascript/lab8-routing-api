@@ -40,10 +40,10 @@ describe('Products API', () => {
     return mockRequest.post('/api/v1/products')
       .send(testProduct)
       .then(response => {
-        return response.body._id})
+        return response.body._id;})
       .then(id => {
         return mockRequest.put(`/api/v1/products/${id}`)
-          .send(testProductPut)
+          .send(testProductPut);
       })
       .then(response => {
         expect(response.status).toEqual(200);
@@ -124,10 +124,10 @@ describe('Categories API', () => {
     return mockRequest.post('/api/v1/categories')
       .send(testProduct)
       .then(response => {
-        return response.body._id})
+        return response.body._id;})
       .then(id => {
         return mockRequest.put(`/api/v1/categories/${id}`)
-          .send(testProductPut)
+          .send(testProductPut);
       })
       .then(response => {
         expect(response.status).toEqual(200);
