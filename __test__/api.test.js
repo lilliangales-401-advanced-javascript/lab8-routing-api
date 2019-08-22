@@ -10,7 +10,7 @@ describe('Products API', () => {
       name: 'Insomnia',
       description: 'An OK book',
       price: 10,
-      category: 'books'
+      category: 'books',
     };
 
     return mockRequest.post('/api/v1/products')
@@ -27,14 +27,14 @@ describe('Products API', () => {
       name: 'Insomnia',
       description: 'An ok book',
       price: 10,
-      category: 'books'
+      category: 'books',
     };
 
     const testProductPut = {
       name: 'Insomnia',
       description: 'A BAD book',
       price: 10,
-      category: 'books'
+      category: 'books',
     };
 
     return mockRequest.post('/api/v1/products')
@@ -56,7 +56,7 @@ describe('Products API', () => {
       name: 'Insomnia',
       description: 'A BAD book',
       price: 10,
-      category: 'books'
+      category: 'books',
     };
 
     return mockRequest.post('/api/v1/products')
@@ -77,7 +77,7 @@ describe('Products API', () => {
       name: 'Insomnia',
       description: 'A BAD book',
       price: 10,
-      category: 'books'
+      category: 'books',
     };
 
     return mockRequest.post('/api/v1/products')

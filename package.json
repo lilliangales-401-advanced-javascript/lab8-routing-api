@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
-    "test-watch": "jest --watchAll --verbose"
+    "test-watch": "jest --watchAll --verbose",
+    "lint": "eslint '**/*.js'",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
   },
   "jest": {
     "testEnvironment": "node"
@@ -16,8 +18,11 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.1.0",
+    "eslint": "^6.2.1",
     "express": "^4.17.1",
     "jest": "^24.8.0",
+    "jsdoc": "^3.6.3",
+    "lint": "^0.7.0",
     "mongodb-memory-server": "^5.2.0",
     "mongoose": "^5.6.1",
     "mongoose-schema-jsonschema": "^1.2.1",
